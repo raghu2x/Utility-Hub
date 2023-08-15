@@ -1,12 +1,10 @@
 import { createApp } from 'vue'
-import './css/app.css'
-import './css/style.css'
 import App from './App.vue'
-import router from './router'
+import plugins from './plugins'
 
 const app = createApp(App)
 
-app.use(router)
+app.use(plugins)
 
 // mount application
 app.mount('#app')

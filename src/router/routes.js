@@ -4,11 +4,15 @@ export default [
     component: () => import('../pages/HomePage.vue'),
   },
   {
-    path: '/calculator',
+    path: '/simple-calculator',
     component: () => import('../pages/Calculator.vue'),
   },
   {
     path: '/emi-calculator',
     component: () => import('../pages/EmiCalculator.vue'),
+  },
+  {
+    path: '/:catchAll(.*)*',
+    component: () => import('../pages/ErrorNotFound.vue'),
   },
 ]
