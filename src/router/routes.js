@@ -7,4 +7,8 @@ export default [
     path: '/calculator',
     component: () => import('../pages/Calculator.vue'),
   },
+  {
+    path: '/emi-calculator',
+    component: () => import('../pages/EmiCalculator.vue'),
+  },
 ]
